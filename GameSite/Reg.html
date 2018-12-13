@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+		<head>
+			<title>Reg</title>
+				<link rel="stylesheet" type="text/css" href="CSS.css">
+		</head>
+		<div id="H" style="position: absolute; width: 100%; left: 0px; right: 0px; top: 0px;">
+			<h1>
+				<img src="reg.gif" style="width: 400px; height: 50px;">
+			</h1>
+			<h2>
+				<a href="Home.html">Home Page</a>
+				<a href="Game.html">Game Page</a>
+				<a href="Reg.html">Reg Page </a>
+			</h2>
+		</div>
+
+		<div id="RegMain" style="position: absolute; top: 28%; right: 5%; left: 5%;">
+			
+
+			<body>
+
+			   Enter Your Fullname, Username, Email and Password to Register.<br>
+			   <p id="result">Please Register, using the Fields Bellow.</p>
+
+			   <form id="usrDetails" onsubmit="return false">
+
+				<b>Full Name : </b><br><input type="text" id="fullNameInput"> <br> <br>
+				<b>User Name : </b><br><input type="text" id="userNameInput"> <br> <br>
+				<b>Email Address : </b><br><input type="Email" id="emailInput"> <br> <br>
+				<b>Password  : </b><br><input type="password" id="passwordInput"> <br> <br>
+
+				<input type="submit" value="Register" onclick="storeUser()">
+
+
+				<script src="Registration.js"></script>
+
+			</form>
+
+			<br>
+
+		</div>
+
+		<img src="mount.jpg"; style="width: 100%; position: absolute; bottom: 0px; left: 0px; right: 0px;" >
+
+		</body>
+
+
+
+	</html>
