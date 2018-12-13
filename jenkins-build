@@ -1,0 +1,9 @@
+#!/bin/bash
+if docker ps | grep goserver
+then
+	docker container stop goserver
+    docker container rm goserver
+fi
+
+docker build -t go-server .
+docker run -d --name goserver -p 3000:3000 go-server
