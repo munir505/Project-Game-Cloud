@@ -162,21 +162,21 @@ function Object(xO, yO, width, height) {
         context.lineWidth = 2;
         context.strokeRect(this.xO, this.yO, this.width, this.height);
 
-        //this function detects if the player has touched the enemy
-        //if (player.xPos < this.xO + this.width &&
-			//player.xPos + player.width > this.xO &&
-			//player.yPos < this.yO + this.height &&
-			//player.height + player.yPos > this.yO) {
+        this function detects if the player has touched the enemy
+        if (player.xPos < this.xO + this.width &&
+			player.xPos + player.width > this.xO &&
+			player.yPos < this.yO + this.height &&
+			player.height + player.yPos > this.yO) {
 
-            //plays fun sound effect if touched
-           // boom.play();
+            plays fun sound effect if touched
+            boom.play();
 
-            //resets postion of player and add one to deathcount
-           // player.xPos = 1;
-           // player.yPos = canvas.height / 2;
-           // deathCount++;
+            resets postion of player and add one to deathcount
+            player.xPos = 1;
+            player.yPos = canvas.height / 2;
+            deathCount++;
 
-        //}
+        }
     }
 }
 
