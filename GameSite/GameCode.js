@@ -105,6 +105,7 @@ keys.LEFT = 37;
 keys.RIGHT = 39;
 keys.DOWN = 40;
 
+
 //function that takes a keycode and does a process depending what keycode is pressed
 document.body.onkeyup =
 document.body.onkeydown = function (e) {
@@ -162,16 +163,16 @@ function Object(xO, yO, width, height) {
         context.lineWidth = 2;
         context.strokeRect(this.xO, this.yO, this.width, this.height);
 
-        this function detects if the player has touched the enemy
+        //this function detects if the player has touched the enemy
         if (player.xPos < this.xO + this.width &&
 			player.xPos + player.width > this.xO &&
 			player.yPos < this.yO + this.height &&
 			player.height + player.yPos > this.yO) {
 
-            plays fun sound effect if touched
+            //plays fun sound effect if touched
             boom.play();
 
-            resets postion of player and add one to deathcount
+            //resets postion of player and add one to deathcount
             player.xPos = 1;
             player.yPos = canvas.height / 2;
             deathCount++;
@@ -301,7 +302,6 @@ function level1() {
         if (object8.xO >= canvas.width - 150) {
             direction2 = 7;
             object8.xO -= direction2;
-
         }
 
         //does function update and drawobject so that player as well all other objects are drawn
@@ -356,7 +356,7 @@ function level2() {
         playerMove();
 
     }, 1000 / 60);
-
+	
     //creates the objects for level 2
     var obj = new Object(180, 200, 25, 25);
     var obj2 = new Object(680, 200, 25, 25);
@@ -490,7 +490,7 @@ function level3() {
 
     var final6 = new Object(700, 0, 10, 185);
     var final7 = new Object(700, canvas.height - 170, 10, 170);
-
+	
     //draws objects for level 3
     function drawFinal() {
         final.draw();
@@ -559,9 +559,7 @@ function level3() {
             clear();
             gameFinish();
         }
-
     }
-
 }
 
 //page that is displayed once the game ends
@@ -591,8 +589,4 @@ function gameFinish() {
     context.fillStyle = 'blue';
     context.fillText("Refresh Page", 390, 400);
     scoreRank();
-
 }
-
-
-
